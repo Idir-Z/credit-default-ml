@@ -326,7 +326,7 @@ print(f"This is a more realistic score compared to perfect 1.0 with leaky featur
 
 def evaluate_threshold(y_true, y_proba, threshold):
     """
-    Evaluate model performance at a specific threshold.
+    Evaluate model performance at a specific threshold
     
     Parameters:
     -----------
@@ -470,6 +470,7 @@ def plot_threshold_analysis(threshold_results):
                   fontsize=12, fontweight='bold', pad=20)
     
     plt.tight_layout()
+    plt.savefig("figures/threshold-analysis.png")
     plt.show()
 
 
@@ -691,6 +692,7 @@ ax2.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1))
 ax2.grid(True)
 
 plt.tight_layout()
+plt.savefig("figures/model_comparison.png")
 plt.show()
 
 print(f"\n{'='*60}")
